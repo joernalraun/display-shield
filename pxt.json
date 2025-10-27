@@ -1,7 +1,7 @@
 {
     "name": "display-shield",
     "version": "1.0.8",
-    "description": "Display shield extension for MakeCode micro:bit",
+    "description": "Display shield extension for MakeCode",
     "dependencies": {
         "core": "*",
         "radio": "*",
@@ -67,7 +67,8 @@
         "targetId": "microbit"
     },
     "supportedTargets": [
-        "microbit"
+        "microbit",
+        "calliopemini"
     ],
     "disablesVariants": [
         "mbdal"
