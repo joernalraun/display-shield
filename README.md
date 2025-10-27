@@ -9,7 +9,7 @@ image editor in MakeCode.
 
 ## Arcade shield for the Calliope mini
 
-Display-shield can be usen with the GameKit
+Display-shield can be used with the GameKit
 
 ## Simulator support
 
