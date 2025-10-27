@@ -1,25 +1,15 @@
-# Display shield MakeCode extension for BBC micro:bit
+# Display shield MakeCode extension
 
-This MakeCode extension allows you to use any of the MakeCode Arcade shields with the MakeCode for BBC micro:bit editor. 
+This MakeCode extension allows you to use any of the MakeCode Arcade shields with MakeCode. 
 The extension provides access to the color display and buttons on the shield, and has
 a Bitmap abstraction with numerous drawing primitives
 (draw line, circle, square, etc).
 Bitmaps also can be created using the built-in
 image editor in MakeCode.
 
-## Arcade shields for the micro:bit V2
+## Arcade shield for the Calliope mini
 
-Five Arcade (display) shields for the micro:bit V2 are available on the market today, including:
-
-* [Kittenbot's newbit Arcade shield](https://www.kittenbot.cc/products/newbit-arcade-shield): No assembly required Small screen and nice enclosure with LiPo battery inside. One [Jacdac](https://aka.ms/jacdac) port.
-* [ICShopping's Game:bit Arcade shield](https://www.icshop.com.tw/products/368112100137?locale=en): No assembly required. Large screen and 3d-printed enclosure with LiPo battery inside. Two [Jacdac](https://aka.ms/jacdac) ports.
-* [ELECFREAK's micro:bit Arcade shield](https://shop.elecfreaks.com/products/micro-bit-retro-programming-arcade): Assembly required. Small screen. AAA Battery pack on back. One [Jacdac](https://aka.ms/jacdac) port.
-* [Forward Education's CodeCTRL shield](https://forwardedu.com/pages/codectrl-for-micro-bit): No assembly required. Large screen and 3-d printed enclosure with LiPo battery inside. Two [Jacdac](https://aka.ms/jacdac) ports.
-* [Kitronik's Arcade for BBC micro:bit](https://kitronik.co.uk/products/56116-kitronik-arcade-for-bbc-micro-bit-makecode-arcade): No assembly required. Small screen. Battery holder on back. No Jacdac port.
-
-![MakeCode Arcade shields](https://github.com/microbit-apps/display-shield/blob/master/assets/shields.png?raw=true)
-![more MakeCode Arcade shields](https://github.com/microbit-apps/display-shield/blob/master/assets/shields2.png?raw=true)
-
+Display-shield can be usen with the GameKit
 
 ## Simulator support
 
@@ -37,17 +27,15 @@ for the shield are under the toolbox categories `Controller` and
 
 ## Using this extension
 
--  Open https://makecode.microbit.org/
+-  Open https://makecode.calliope.cc/
 -  Create a new project
 -  Add an extension via the "Extensions" item in the gear wheel (upper right)
--  Click the "Lights and Display" button, as shown below
--  Select the **display-shield** extension, as shown below
-
-![MakeCode extension dialog](https://github.com/microbit-apps/display-shield/blob/master/assets/extensions.png?raw=true)
+-  Search for display-shield
+-  Select the **display-shield** extension
 
 ## Mashup!!!
 
-With this extension, you have access to **all** the MakeCode APIs for the micro:bit, and the new ability to plot data or create your own user interface. For example, one very cool thing about the micro:bit is its (X,Y,Z) accelerometer, which senses motion in three dimensions.  Below is a program that maps the three accelerometer values to a scrolling line graph:
+With this extension, you have access to **all** the MakeCode APIs, and the new ability to plot data or create your own user interface. Below is a program that maps the three accelerometer values to a scrolling line graph:
 ```blocks
 let x = 0, old_x = 0
 let y = 0, old_y = 0
@@ -70,10 +58,6 @@ basic.forever(function () {
     old_z = z
 })
 ```
-
-## Tutorials
-
--   [Getting started](https://makecode.microbit.org/#tutorial:github:microbit-apps/display-shield/tutorials/getting-started)
 
 ## Overview of API
 
@@ -485,5 +469,6 @@ screen().drawTransparentBitmap(orangeBox, 32, 32)
 # Supported targets
 
 - for PXT/microbit
+- for PXT/calliopemini
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
